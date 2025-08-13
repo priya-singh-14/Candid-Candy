@@ -38,8 +38,6 @@ export default class Connection {
             mongoose.connect(
                 DATABASE_URL,
                 {
-                    useNewUrlParser: true,
-                    useUnifiedTopology: true,
                     maxPoolSize: 50,
                     socketTimeoutMS: 2500,
                     dbName: db
